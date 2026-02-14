@@ -17,84 +17,92 @@ const skillsData = [
   {
     icon: "React",
     label: "REACT",
-    labelAr: "ريأكت",
+    labelAr: "REACT",
   },
   {
     icon: "JavaScript",
     label: "JAVASCRIPT",
-    labelAr: "جافاسكريبت",
+    labelAr: "JAVASCRIPT",
   },
   {
     icon: "CSS",
     label: "CSS",
-    labelAr: "سي إس إس",
+    labelAr: "CSS",
   },
   {
     icon: "HTML",
     label: "HTML",
-    labelAr: "إتش تي إم إل",
+    labelAr: "HTML",
   },
   {
     icon: "Design",
-    label: "UI/UX DESIGN",
-    labelAr: "تصميم واجهات",
+    label: "USER DESIGN",
+    labelAr: "وظيفة المستخدم",
   },
   {
     icon: "Performance",
-    label: "WEB PERFORMANCE",
-    labelAr: "الأداء والتحسين",
+    label: "USER EXPERIENCE",
+    labelAr: "تجربة المستخدم",
   },
 ];
 
 const SkillIcon = ({ type }: { type: string }) => {
   switch (type) {
     case "React":
-      // React logo
+      // React official logo - electron orbits
       return (
-        <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <circle cx="12" cy="12" r="2" fill="currentColor" />
-          <ellipse cx="12" cy="12" rx="8" ry="3" fill="none" stroke="currentColor" strokeWidth="1.5" />
-          <ellipse cx="12" cy="12" rx="8" ry="3" fill="none" stroke="currentColor" strokeWidth="1.5" transform="rotate(60 12 12)" />
-          <ellipse cx="12" cy="12" rx="8" ry="3" fill="none" stroke="currentColor" strokeWidth="1.5" transform="rotate(120 12 12)" />
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8">
+          <circle cx="12" cy="12" r="3" fill="currentColor" />
+          <ellipse cx="12" cy="12" rx="7" ry="2.5" />
+          <ellipse cx="12" cy="12" rx="7" ry="2.5" transform="rotate(60 12 12)" />
+          <ellipse cx="12" cy="12" rx="7" ry="2.5" transform="rotate(120 12 12)" />
         </svg>
       );
     case "JavaScript":
-      // JavaScript logo (yellow square with JS)
+      // JavaScript official logo - yellow square with JS
       return (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8">
-          <rect x="3" y="3" width="18" height="18" fill="currentColor" rx="2" />
-          <path d="M9 14H11V10H9V14M13 14H15V10H13V14" fill="white" />
+          <rect x="2" y="2" width="20" height="20" rx="2" fill="#F7DF1E" />
+          <path d="M7 8H9V14H7V8M15 8H17V14H15V8" fill="#000" />
         </svg>
       );
     case "CSS":
-      // CSS logo (shield shape)
+      // CSS official logo - shield
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <path d="M 6 3 L 6 10 C 6 14 12 19 12 19 C 12 19 18 14 18 10 L 18 3 L 6 3 M 12 11 L 10 15 L 14 15 L 12 11" fill="currentColor" />
+          <path d="M6 3L6.5 19.5L12 21L17.5 19.5L18 3H6Z" fill="currentColor" />
+          <path d="M9 9H15L14.5 13H12L11.5 15H15V17H9L9.5 13H12L12.5 9Z" fill="rgba(0,0,0,0.3)" />
         </svg>
       );
     case "HTML":
-      // HTML logo (angle brackets)
+      // HTML official logo - angle brackets
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <path d="M 6 3 L 6 21 L 18 21 L 18 3 L 6 3 M 8 5 L 16 5 L 16 8 L 8 8 L 8 5 M 8 10 L 16 10 L 16 13 L 8 13 L 8 10 M 8 15 L 16 15 L 16 18 L 8 18 L 8 15" fill="currentColor" />
+          <path d="M6 3L6.5 19.5L12 21L17.5 19.5L18 3H6Z" fill="currentColor" />
+          <path d="M9 9H15V11H9ZM9 13H15V15H9Z" fill="rgba(0,0,0,0.3)" />
         </svg>
       );
     case "Design":
-      // Figma-like design tool icon
+      // Design/UX icon - circle with grid
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <circle cx="9" cy="9" r="3" fill="currentColor" />
-          <circle cx="15" cy="15" r="3" fill="currentColor" />
-          <rect x="7" y="12" width="10" height="6" rx="2" fill="currentColor" opacity="0.7" />
-          <circle cx="12" cy="12" r="1" fill="white" />
+          <circle cx="12" cy="7" r="2.5" fill="currentColor" />
+          <circle cx="18" cy="14" r="2.5" fill="currentColor" />
+          <circle cx="6" cy="14" r="2.5" fill="currentColor" />
+          <circle cx="12" cy="20" r="2.5" fill="currentColor" />
+          <path d="M12 9.5V18.5" stroke="currentColor" strokeWidth="1" fill="none" />
+          <path d="M8 11L16 17" stroke="currentColor" strokeWidth="1" fill="none" />
+          <path d="M16 11L8 17" stroke="currentColor" strokeWidth="1" fill="none" />
         </svg>
       );
     case "Performance":
-      // Lightning bolt / Performance icon
+      // Performance/Speed icon - gauge or speedometer
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <path d="M 13 2 L 3 14 H 10 L 11 22 L 21 10 H 14 L 13 2" fill="currentColor" />
+          <circle cx="12" cy="14" r="8" fill="none" stroke="currentColor" strokeWidth="1.5" />
+          <path d="M12 14L15 10" stroke="currentColor" strokeWidth="2" />
+          <circle cx="12" cy="14" r="1.5" fill="currentColor" />
+          <path d="M7 14L10 12M17 14L14 12" stroke="currentColor" strokeWidth="1" />
         </svg>
       );
     default:
@@ -134,7 +142,7 @@ export default function SkillsSection({
                 <SkillIcon type={skill.icon} />
               </div>
               <h3 className="text-sm font-semibold text-center text-foreground group-hover:text-primary transition-colors">
-                {skill.label}
+                {isArabic ? skill.labelAr : skill.label}
               </h3>
             </div>
           ))}
