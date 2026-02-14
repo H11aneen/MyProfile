@@ -24,7 +24,7 @@ const projectsData = [
     titleEn: "Case Study - Tajawal App",
     descriptionAr: "تصميم واجهات تطبيق تجوال وتحسين تجربة المستخدم",
     descriptionEn: "Design and user experience improvement for Tajawal travel app",
-    image: "https://cdn.dribbble.com/userupload/4147903/file/still-20210611-144728-bcgreyf5f5f5-1-.png",
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
     link: "https://www.behance.net/gallery/209099467/Case-study-tajawwal",
     tags: ["UI Design", "UX Research", "Mobile Design"],
   },
@@ -34,7 +34,7 @@ const projectsData = [
     titleEn: "Design System",
     descriptionAr: "بناء نظام تصميم متكامل للمشاريع الكبرى",
     descriptionEn: "Building a comprehensive design system for large-scale projects",
-    image: "https://cdn.dribbble.com/userupload/4159948/file/still-20210617-164159-bcgwhite-1-.png",
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
     link: "https://www.behance.net/gallery/243241261/_",
     tags: ["Design System", "UI Kit", "Components"],
   },
@@ -44,7 +44,7 @@ const projectsData = [
     titleEn: "Real Estate Platform",
     descriptionAr: "تطوير منصة عقارية مع واجهات متقدمة وتجربة مستخدم سلسة",
     descriptionEn: "Development of real estate platform with advanced interfaces",
-    image: "https://cdn.dribbble.com/userupload/3754289/file/still-20210406-141728-bcgwhite-1-.png",
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
     link: "https://www.behance.net/gallery/210637705/UIH",
     tags: ["Web Design", "UI/UX", "Real Estate"],
   },
@@ -54,7 +54,7 @@ const projectsData = [
     titleEn: "Studip Educational App",
     descriptionAr: "تصميم تطبيق تعليمي مع واجهات حديثة وتفاعلية",
     descriptionEn: "Design of innovative educational app with interactive interfaces",
-    image: "https://cdn.dribbble.com/userupload/3840520/file/still-20210426-155640-bcgwhite-1-.png",
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
     link: "https://www.behance.net/gallery/231009663/Studip-App",
     tags: ["Education", "Mobile App", "UI Design"],
   },
@@ -96,6 +96,9 @@ export default function ProjectsSection({
                   src={project.image}
                   alt={isArabic ? project.titleAr : project.titleEn}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 300'%3E%3Crect fill='%23374151' width='500' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='%239ca3af' text-anchor='middle' dy='.3em'%3EProject Image%3C/text%3E%3C/svg%3E";
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
                   <button className="bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-medium flex items-center gap-2">

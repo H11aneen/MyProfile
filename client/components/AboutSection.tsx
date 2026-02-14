@@ -8,20 +8,20 @@ const translations = {
   ar: {
     about: "نبذة عني",
     title: "حنين العتيبي",
-    subtitle: "متخصصة في تصميم واجهات المستخدم وتطوير الويب",
+    subtitle: "خريجة علوم حاسب",
     description1:
-      "أنا حنين العتيبي، متخصصة في تصميم واجهات المستخدم وتطوير تطبيقات الويب الحديثة",
+      "أنا حنين العتيبي، خريجة علوم حاسب، متخصصة في تصميم تجربة المستخدم وواجهة المستخدم، وأيضاً مطورة ويب.",
     description2:
-      "أجمع بين المهارات التقنية والفنية لصياغة تجارب رقمية حديثة وجميلة على المستخدم",
+      "اجمع بين المهارات التقنية والرؤية الابداعية لصياغة تجارب رقمية عالية الجودة وتركز على المستخدم",
   },
   en: {
     about: "About Me",
     title: "Hanin AlOtaibi",
-    subtitle: "UI/UX Designer & Web Developer",
+    subtitle: "Computer Science Graduate",
     description1:
-      "I am Hanin AlOtaibi, a passionate UI/UX designer and web developer specializing in creating modern and user-friendly digital experiences.",
+      "I am Hanin AlOtaibi, a Computer Science graduate specializing in UX/UI Design and web development.",
     description2:
-      "I combine technical skills with creative design to craft beautiful and functional digital solutions that users love.",
+      "I combine technical expertise with creative vision to craft high-quality, user-focused digital experiences.",
   },
 };
 
@@ -67,22 +67,6 @@ export default function AboutSection({ language }: AboutSectionProps) {
             <p className="text-foreground/70 leading-relaxed">
               {t.description2}
             </p>
-
-            {/* Experience Counter */}
-            <div className="grid grid-cols-2 gap-4 mt-8 pt-8 border-t border-border/20">
-              <div>
-                <p className="text-2xl font-bold text-primary">5+</p>
-                <p className="text-foreground/70 text-sm">
-                  {isArabic ? "سنوات الخبرة" : "Years of Experience"}
-                </p>
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-primary">30+</p>
-                <p className="text-foreground/70 text-sm">
-                  {isArabic ? "المشاريع المنجزة" : "Completed Projects"}
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

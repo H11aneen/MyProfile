@@ -6,9 +6,9 @@ interface ContactSectionProps {
 
 const translations = {
   ar: {
-    contact: "معلومات الاتصال",
+    contact: "تواصل معي",
     contactDesc:
-      "لا تتردد في التواصل معي بخصوص المشاريع الجديدة أو الاستفسارات عن خبرتي وخدماتي",
+      "أنا دائماً جاهزه لمناقشة المشاريع الجديدة أو الأفكار الإبداعية أو الفرص لاكون جزءاً من رؤيتكم",
     email: "البريد الإلكتروني",
     emailAddress: "h1taneen@gmail.com",
     linkedin: "لينكد إن",

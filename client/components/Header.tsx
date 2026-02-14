@@ -11,7 +11,7 @@ const translations = {
     about: "نبذة عني",
     projects: "المشاريع",
     skills: "المهارات",
-    contact: "اتصل",
+    contact: "تواصل معي",
     english: "English",
     arabic: "العربية",
   },

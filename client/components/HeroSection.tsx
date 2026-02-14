@@ -6,9 +6,9 @@ interface HeroSectionProps {
 
 const translations = {
   ar: {
-    greeting: "أهلا بك في عالمي",
+    greeting: "",
     title: "حنين العتيبي",
-    subtitle: "مصممة تجربة مستخدم ومطورة ويب متخصصة في تطوير الويب",
+    subtitle: "مصممة تجربة مستخدم و واجهات المستخدم ومطورة ويب",
     description:
       "أقوم بتصميم وتطوير تطبيقات ويب حديثة وجميلة تجمع بين الإبداع والتقنية",
     contactBtn: "تواصل معي",
@@ -34,9 +34,11 @@ export default function HeroSection({ language }: HeroSectionProps) {
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto">
           {/* Greeting */}
-          <p className="text-primary text-sm mb-4 animate-fade-in">
-            {t.greeting}
-          </p>
+          {t.greeting && (
+            <p className="text-primary text-sm mb-4 animate-fade-in">
+              {t.greeting}
+            </p>
+          )}
 
           {/* Main Title */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
