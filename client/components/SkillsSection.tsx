@@ -37,12 +37,12 @@ const skillsData = [
   {
     icon: "Design",
     label: "USER DESIGN",
-    labelAr: "وظيفة المستخدم",
+    labelAr: "(UX) تجربة المستخدم",
   },
   {
     icon: "Performance",
     label: "USER EXPERIENCE",
-    labelAr: "تجربة المستخدم",
+    labelAr: "تصميم واجهات المستخدم",
   },
 ];
 
