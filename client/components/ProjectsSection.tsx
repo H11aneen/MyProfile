@@ -24,7 +24,7 @@ const projectsData = [
     titleEn: "Tajawal App",
     descriptionAr: "عملت كجزء من فريق التصميم على تطوير تجربة المستخدم لتطبيق \"تجوّل\"، حيث ساهمت في إعداد تدفقات المستخدم (User Flows)، بناء هيكل المعلومات (Sitemap)، وتصميم واجهات تفاعلية تركز على الوضوح وسهولة الاستخدام",
     descriptionEn: "I worked as part of the design team to develop the user experience for the Tajawal app, contributing to user flows, information architecture, and interactive interface design focused on clarity and ease of use.",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1f80866bc3374093b088755fa02d2102%2Feebe741fe1754e7c8f003d9355d50104",
     link: "https://www.behance.net/gallery/209099467/Case-study-tajawwal",
     tags: ["UI Design", "UX Research", "Mobile Design"],
   },
@@ -34,14 +34,14 @@ const projectsData = [
     titleEn: "Compliance - Smart Health Compliance Monitoring",
     descriptionAr: "نظام رقابة ذكي متقدم للامتثال الصحي مع واجهات مستخدم تفاعلية",
     descriptionEn: "Advanced smart monitoring system for health compliance with interactive user interfaces",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1f80866bc3374093b088755fa02d2102%2F46ebd5a910794e48bde4e6e29c9ed22e",
     link: "https://www.behance.net/gallery/243241261/_",
     tags: ["Health Tech", "UI Design", "Monitoring System"],
   },
   {
     id: 3,
-    titleAr: "منصة عقارية تفاعلية",
-    titleEn: "Real Estate Platform",
+    titleAr: "تصميم واجهات لتطبيق ورد",
+    titleEn: "WordPress App Interface Design",
     descriptionAr: "تطوير منصة عقارية مع واجهات متقدمة وتجربة مستخدم سلسة",
     descriptionEn: "Development of real estate platform with advanced interfaces",
     image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
@@ -50,10 +50,10 @@ const projectsData = [
   },
   {
     id: 4,
-    titleAr: "تطبيق تعليمي مبتكر",
-    titleEn: "Studip Educational App",
-    descriptionAr: "تصميم تطبيق تعليمي مع واجهات حديثة وتفاعلية",
-    descriptionEn: "Design of innovative educational app with interactive interfaces",
+    titleAr: "تطبيق Studip - للدراسة الجماعبة",
+    titleEn: "Studip - Collaborative Learning App",
+    descriptionAr: "تطبيق مبتكر للطلاب يتيح الدراسة الجماعية مع الأصدقاء ويحتوي على ألعاب لزيادة التركيز. قمت بالعمل على المشروع من مرحلة تجربة المستخدم (UX) وصولاً إلى واجهة المستخدم (UI).",
+    descriptionEn: "An innovative app for students enabling group study with friends and featuring focus-enhancing games. I worked on the project from UX through UI design.",
     image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
     link: "https://www.behance.net/gallery/231009663/Studip-App",
     tags: ["Education", "Mobile App", "UI Design"],
@@ -110,13 +110,13 @@ export default function ProjectsSection({
 
               {/* Project Info */}
               <div>
-                <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
+                <h3 className={`text-lg font-semibold mb-2 group-hover:text-primary transition-colors ${isArabic ? 'text-right' : 'text-left'}`}>
                   {isArabic ? project.titleAr : project.titleEn}
                 </h3>
-                <p className="text-foreground/70 text-sm mb-3">
+                <p className={`text-foreground/70 text-sm mb-3 ${isArabic ? 'text-right' : 'text-left'}`}>
                   {isArabic ? project.descriptionAr : project.descriptionEn}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className={`flex flex-wrap gap-2 ${isArabic ? 'flex-row-reverse justify-end' : ''}`}>
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
