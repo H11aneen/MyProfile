@@ -6,10 +6,10 @@ interface SkillsSectionProps {
 
 const translations = {
   ar: {
-    skills: "مهاراتي",
+    skills: "المهارات التقنية",
   },
   en: {
-    skills: "My Skills",
+    skills: "Technical Skills",
   },
 };
 
@@ -49,40 +49,54 @@ const skillsData = [
 const SkillIcon = ({ type }: { type: string }) => {
   switch (type) {
     case "React":
+      // React logo
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <circle cx="12" cy="11.245" r="1.785" fill="currentColor" />
-          <path d="M7.502 20.118c5.718 3.806 13.502 3.756 19.185 0M4.108 16.79c3.329 2.786 8.694 4.428 12.395 4.428 3.701 0 9.066-1.642 12.396-4.428M2.461 12.221c1.334 2.877 5.411 5.931 9.499 6.954 4.088 1.023 9.155-.408 12.779-3.394M20.067 3.507c-5.192 3.24-12.817 1.231-18.345-1.231M3.628 2.503c2.645 3.535 6.388 5.223 10.677 5.223 4.29 0 8.032-1.688 10.677-5.223" stroke="currentColor" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          <circle cx="12" cy="12" r="2" fill="currentColor" />
+          <ellipse cx="12" cy="12" rx="8" ry="3" fill="none" stroke="currentColor" strokeWidth="1.5" />
+          <ellipse cx="12" cy="12" rx="8" ry="3" fill="none" stroke="currentColor" strokeWidth="1.5" transform="rotate(60 12 12)" />
+          <ellipse cx="12" cy="12" rx="8" ry="3" fill="none" stroke="currentColor" strokeWidth="1.5" transform="rotate(120 12 12)" />
         </svg>
       );
     case "JavaScript":
+      // JavaScript logo (yellow square with JS)
       return (
-        <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <rect width="24" height="24" fill="none" />
-          <rect x="3" y="3" width="18" height="18" rx="1" fill="currentColor" />
-          <text x="12" y="17" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">JS</text>
+        <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8">
+          <rect x="3" y="3" width="18" height="18" fill="currentColor" rx="2" />
+          <path d="M9 14H11V10H9V14M13 14H15V10H13V14" fill="white" />
         </svg>
       );
     case "CSS":
+      // CSS logo (shield shape)
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <path d="M 5 3 L 4 19.5 L 12 21.5 L 20 19.5 L 21 3 Z M 7 5 L 17 5 L 16.5 11 L 12 12.5 L 7.5 11 L 7 5 Z M 8 13 L 12 14.5 L 16 13 L 16.5 8 L 7.5 8 L 8 13 Z" fill="currentColor" />
+          <path d="M 6 3 L 6 10 C 6 14 12 19 12 19 C 12 19 18 14 18 10 L 18 3 L 6 3 M 12 11 L 10 15 L 14 15 L 12 11" fill="currentColor" />
         </svg>
       );
     case "HTML":
+      // HTML logo (angle brackets)
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <path d="M 5 3 L 4 19.5 L 12 21.5 L 20 19.5 L 21 3 Z M 7 5 L 17 5 L 16.5 11 L 12 12.5 L 7.5 11 L 7 5 Z M 8 13 L 12 14.5 L 16 13 L 16.5 8 L 7.5 8 L 8 13 Z" fill="currentColor" />
+          <path d="M 6 3 L 6 21 L 18 21 L 18 3 L 6 3 M 8 5 L 16 5 L 16 8 L 8 8 L 8 5 M 8 10 L 16 10 L 16 13 L 8 13 L 8 10 M 8 15 L 16 15 L 16 18 L 8 18 L 8 15" fill="currentColor" />
         </svg>
       );
     case "Design":
+      // Figma-like design tool icon
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <path d="M 12 2 C 6.48 2 2 6.48 2 12 C 2 17.52 6.48 22 12 22 C 17.52 22 22 17.52 22 12 C 22 6.48 17.52 2 12 2 Z M 12 20 C 7.59 20 4 16.41 4 12 C 4 7.59 7.59 4 12 4 C 16.41 4 20 7.59 20 12 C 20 16.41 16.41 20 12 20 Z M 12.5 7 H 11.5 V 12.5 L 16.2 15.9 L 16.8 15.1 L 12.5 12.4 Z" fill="currentColor" />
+          <circle cx="9" cy="9" r="3" fill="currentColor" />
+          <circle cx="15" cy="15" r="3" fill="currentColor" />
+          <rect x="7" y="12" width="10" height="6" rx="2" fill="currentColor" opacity="0.7" />
+          <circle cx="12" cy="12" r="1" fill="white" />
         </svg>
       );
     case "Performance":
-      return <Zap className="w-8 h-8" />;
+      // Lightning bolt / Performance icon
+      return (
+        <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
+          <path d="M 13 2 L 3 14 H 10 L 11 22 L 21 10 H 14 L 13 2" fill="currentColor" />
+        </svg>
+      );
     default:
       return <Code2 className="w-8 h-8" />;
   }
@@ -102,7 +116,7 @@ export default function SkillsSection({
       <div className="container mx-auto">
         <div className="mb-12">
           <p className="text-primary text-sm mb-2">
-            {isArabic ? "خدماتي" : "My Services"}
+            {isArabic ? "ما أتقنه" : "What I Master"}
           </p>
           <h2 className="text-3xl md:text-4xl font-bold section-title">
             {t.skills}
