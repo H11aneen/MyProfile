@@ -13,9 +13,9 @@ export default function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <Header language={language} onLanguageChange={setLanguage} />
       <HeroSection language={language} />
-      <ProjectsSection language={language} />
-      <SkillsSection language={language} />
       <AboutSection language={language} />
+      <SkillsSection language={language} />
+      <ProjectsSection language={language} />
       <ContactSection language={language} />
     </div>
   );
