@@ -24,7 +24,7 @@ const projectsData = [
     titleEn: "Tajawal App",
     descriptionAr: "عملت كجزء من فريق التصميم على تطوير تجربة المستخدم لتطبيق \"تجوّل\"، حيث ساهمت في إعداد تدفقات المستخدم (User Flows)، بناء هيكل المعلومات (Sitemap)، وتصميم واجهات تفاعلية تركز على الوضوح وسهولة الاستخدام",
     descriptionEn: "I worked as part of the design team to develop the user experience for the Tajawal app, contributing to user flows, information architecture, and interactive interface design focused on clarity and ease of use.",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F1f80866bc3374093b088755fa02d2102%2Feebe741fe1754e7c8f003d9355d50104",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1f80866bc3374093b088755fa02d2102%2F65adb2b5336048498fd64b7992ae0525",
     link: "https://www.behance.net/gallery/209099467/Case-study-tajawwal",
     tags: ["UI Design", "UX Research", "Mobile Design"],
   },
@@ -44,7 +44,7 @@ const projectsData = [
     titleEn: "WordPress App Interface Design",
     descriptionAr: "تطوير منصة عقارية مع واجهات متقدمة وتجربة مستخدم سلسة",
     descriptionEn: "Development of real estate platform with advanced interfaces",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1f80866bc3374093b088755fa02d2102%2Fc560181a7bcb490f90ebc9e01ab3eb59",
     link: "https://www.behance.net/gallery/210637705/UIH",
     tags: ["Web Design", "UI/UX", "Real Estate"],
   },
@@ -54,7 +54,7 @@ const projectsData = [
     titleEn: "Studip - Collaborative Learning App",
     descriptionAr: "تطبيق مبتكر للطلاب يتيح الدراسة الجماعية مع الأصدقاء ويحتوي على ألعاب لزيادة التركيز. قمت بالعمل على المشروع من مرحلة تجربة المستخدم (UX) وصولاً إلى واجهة المستخدم (UI).",
     descriptionEn: "An innovative app for students enabling group study with friends and featuring focus-enhancing games. I worked on the project from UX through UI design.",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1f80866bc3374093b088755fa02d2102%2Feebe741fe1754e7c8f003d9355d50104",
     link: "https://www.behance.net/gallery/231009663/Studip-App",
     tags: ["Education", "Mobile App", "UI Design"],
   },
@@ -134,7 +134,7 @@ export default function ProjectsSection({
         {/* Browse More Button */}
         <div className="flex justify-center mt-12">
           <a
-            href="https://www.behance.net"
+            href="https://www.behance.net/dad86a3a"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors rounded-md font-medium flex items-center gap-2"
