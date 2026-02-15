@@ -97,7 +97,7 @@ const SkillIcon = ({ type }: { type: string }) => {
       // Performance/Speed icon - lightning bolt
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <path d="M 13 2 L 3 14 L 9 14 L 7 22 L 17 10 L 11 10 Z" fill="currentColor" />
+          <path d="M 13 2 L 3 14 L 9 14 L 7 22 L 17 10 L 11 10 Z" fill="currentColor" style={{ marginTop: "3px" }} />
         </svg>
       );
     default:
@@ -118,9 +118,7 @@ export default function SkillsSection({
     >
       <div className="container mx-auto">
         <div className="mb-12">
-          <p className="text-primary text-sm mb-2">
-            {isArabic ? "ما أتقنه" : "What I Master"}
-          </p>
+          <p className="text-primary text-sm mb-2">.</p>
           <h2 className="text-3xl md:text-4xl font-bold section-title">
             {t.skills}
           </h2>
