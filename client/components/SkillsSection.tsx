@@ -81,7 +81,16 @@ const SkillIcon = ({ type }: { type: string }) => {
         </svg>
       );
     case "Design":
-      // Design - Colorful grid/squares representing design
+      // Design - Professional magnifying glass/search icon
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+          <circle cx="10" cy="10" r="7" />
+          <path d="M 15 15 L 20 20" />
+          <circle cx="10" cy="10" r="3.5" fill="none" strokeWidth="1.5" />
+        </svg>
+      );
+    case "Performance":
+      // Performance - Colorful grid/squares representing design
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
           {/* Top left - Purple */}
@@ -92,15 +101,6 @@ const SkillIcon = ({ type }: { type: string }) => {
           <rect x="3" y="13" width="8" height="8" fill="currentColor" opacity="0.5" rx="1" />
           {/* Bottom right - Yellow */}
           <rect x="13" y="13" width="8" height="8" fill="currentColor" opacity="0.4" rx="1" />
-        </svg>
-      );
-    case "Performance":
-      // Performance - Professional magnifying glass/search icon
-      return (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
-          <circle cx="10" cy="10" r="7" />
-          <path d="M 15 15 L 20 20" />
-          <circle cx="10" cy="10" r="3.5" fill="none" strokeWidth="1.5" />
         </svg>
       );
     default:
