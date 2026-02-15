@@ -81,14 +81,17 @@ const SkillIcon = ({ type }: { type: string }) => {
         </svg>
       );
     case "Design":
-      // Design - Professional palette/artist icon
+      // Design - Colorful grid/squares representing design
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <circle cx="12" cy="12" r="9" fill="currentColor" opacity="0.2" />
-          <path d="M 6 10 C 5 10 4 11 4 12.5 C 4 14 5 15 6 15 C 6.5 15 7 14.5 7 14 C 7 13 7.5 12.5 8.5 12.5 C 9.5 12.5 10 13 10 14 C 10 14.5 10.5 15 11 15 C 12 15 13 14 13 12.5 C 13 11 12 10 11 10 Z" fill="currentColor" />
-          <circle cx="8" cy="8" r="1.5" fill="currentColor" />
-          <circle cx="12" cy="7" r="1" fill="currentColor" />
-          <circle cx="15" cy="9" r="1.2" fill="currentColor" />
+          {/* Top left - Purple */}
+          <rect x="3" y="3" width="8" height="8" fill="currentColor" rx="1" />
+          {/* Top right - Blue */}
+          <rect x="13" y="3" width="8" height="8" fill="currentColor" opacity="0.7" rx="1" />
+          {/* Bottom left - Pink */}
+          <rect x="3" y="13" width="8" height="8" fill="currentColor" opacity="0.5" rx="1" />
+          {/* Bottom right - Yellow */}
+          <rect x="13" y="13" width="8" height="8" fill="currentColor" opacity="0.4" rx="1" />
         </svg>
       );
     case "Performance":
