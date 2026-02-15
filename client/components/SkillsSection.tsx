@@ -132,9 +132,10 @@ export default function SkillsSection({
           {skillsData.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-6 rounded-lg border border-border/20 bg-card/50 hover:border-primary/30 hover:bg-card transition-all duration-300 group"
+              className="flex flex-col items-center justify-center p-6 rounded-lg border border-border/20 bg-card/50 hover:border-primary/30 hover:bg-card transition-all duration-300 group animate-scale-in hover:shadow-xl"
+              style={{ animationDelay: `${index * 0.05}s` }}
             >
-              <div className="text-primary mb-3 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-primary mb-3 group-hover:scale-110 transition-transform duration-300 animate-float">
                 <SkillIcon type={skill.icon} />
               </div>
               <h3 className="text-sm font-semibold text-center text-foreground group-hover:text-primary transition-colors">

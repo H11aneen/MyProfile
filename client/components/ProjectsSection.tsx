@@ -89,9 +89,10 @@ export default function ProjectsSection({
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group"
+              className="group animate-slide-up"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative overflow-hidden rounded-lg aspect-video mb-4 bg-card border border-border/20 hover:border-primary/30 transition-all duration-300">
+              <div className="relative overflow-hidden rounded-lg aspect-video mb-4 bg-card border border-border/20 hover:border-primary/30 transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <img
                   src={project.image}
                   alt={isArabic ? project.titleAr : project.titleEn}
@@ -137,10 +138,11 @@ export default function ProjectsSection({
             href="https://www.behance.net/dad86a3a"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors rounded-md font-medium flex items-center gap-2"
+            className="px-6 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 rounded-md font-medium flex items-center gap-2 hover:scale-110 hover:shadow-lg hover:shadow-primary/50 animate-slide-up"
+            style={{ animationDelay: '0.5s' }}
           >
             {t.browseMore}
-            <ArrowUpRight className="w-4 h-4" />
+            <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform" />
           </a>
         </div>
       </div>

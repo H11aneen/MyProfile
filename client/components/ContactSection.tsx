@@ -52,9 +52,9 @@ export default function ContactSection({ language }: ContactSectionProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto mt-12">
           {/* Email */}
-          <div className="flex flex-col items-center md:items-center text-center">
+          <div className="flex flex-col items-center md:items-center text-center animate-slide-up hover:scale-105 transition-transform duration-300">
             <div className="flex items-center justify-center gap-2 mb-3">
-              <Mail className="w-5 h-5 text-primary" />
+              <Mail className="w-5 h-5 text-primary animate-float" />
               <span className="text-foreground/70 text-sm">{t.email}</span>
             </div>
             <a
@@ -66,9 +66,9 @@ export default function ContactSection({ language }: ContactSectionProps) {
           </div>
 
           {/* LinkedIn */}
-          <div className="flex flex-col items-center md:items-center text-center">
+          <div className="flex flex-col items-center md:items-center text-center animate-slide-up hover:scale-105 transition-transform duration-300" style={{ animationDelay: '0.1s' }}>
             <div className="flex items-center justify-center gap-2 mb-3">
-              <Linkedin className="w-5 h-5 text-primary" />
+              <Linkedin className="w-5 h-5 text-primary animate-float" style={{ animationDelay: '0.5s' }} />
               <span className="text-foreground/70 text-sm">{t.linkedin}</span>
             </div>
             <a
@@ -82,9 +82,9 @@ export default function ContactSection({ language }: ContactSectionProps) {
           </div>
 
           {/* GitHub */}
-          <div className="flex flex-col items-center md:items-center text-center">
+          <div className="flex flex-col items-center md:items-center text-center animate-slide-up hover:scale-105 transition-transform duration-300" style={{ animationDelay: '0.2s' }}>
             <div className="flex items-center justify-center gap-2 mb-3">
-              <Github className="w-5 h-5 text-primary" />
+              <Github className="w-5 h-5 text-primary animate-float" style={{ animationDelay: '1s' }} />
               <span className="text-foreground/70 text-sm">{t.github}</span>
             </div>
             <a

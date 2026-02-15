@@ -47,15 +47,15 @@ export default function AboutSection({ language }: AboutSectionProps) {
         {/* About Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           {/* Left Side - Icon Card */}
-          <div className="flex justify-center md:justify-start order-2 md:order-1">
-            <div className="relative w-64 h-64 rounded-lg border-2 border-primary/30 card-gradient overflow-hidden flex items-center justify-center">
+          <div className="flex justify-center md:justify-start order-2 md:order-1 animate-slide-up">
+            <div className="relative w-64 h-64 rounded-lg border-2 border-primary/30 card-gradient overflow-hidden flex items-center justify-center hover:border-primary/60 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div>
-              <Code2 className="w-32 h-32 text-primary/30 relative z-10" />
+              <Code2 className="w-32 h-32 text-primary/30 relative z-10 animate-float" />
             </div>
           </div>
 
           {/* Right Side - Content */}
-          <div className="flex flex-col justify-center order-1 md:order-2">
+          <div className="flex flex-col justify-center order-1 md:order-2 animate-slide-up" style={{ animationDelay: '0.1s' }}>
             <h3 className="text-2xl md:text-3xl font-bold mb-2">
               {t.title}
             </h3>
