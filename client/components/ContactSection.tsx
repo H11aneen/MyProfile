@@ -68,7 +68,7 @@ export default function ContactSection({ language }: ContactSectionProps) {
               <span className="text-foreground/70 text-sm">{t.linkedin}</span>
             </div>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/haneen-alotaibi-b19774262"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-primary transition-colors"
@@ -87,7 +87,7 @@ export default function ContactSection({ language }: ContactSectionProps) {
             <Mail className="w-5 h-5 text-foreground/60 hover:text-primary" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/haneen-alotaibi-b19774262"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 hover:bg-secondary/50 rounded-md transition-colors"
