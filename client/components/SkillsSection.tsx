@@ -81,22 +81,23 @@ const SkillIcon = ({ type }: { type: string }) => {
         </svg>
       );
     case "Design":
-      // Design/UX - Pen/Pencil icon with modern style
+      // Design - Professional palette/artist icon
       return (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
-          <path d="M 3 17.25 V 21 H 7.25 L 15.81 12.63 L 12.37 9.19 Z" fill="currentColor" stroke="none" />
-          <path d="M 15 4 L 20 9" />
+        <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
+          <circle cx="12" cy="12" r="9" fill="currentColor" opacity="0.2" />
+          <path d="M 6 10 C 5 10 4 11 4 12.5 C 4 14 5 15 6 15 C 6.5 15 7 14.5 7 14 C 7 13 7.5 12.5 8.5 12.5 C 9.5 12.5 10 13 10 14 C 10 14.5 10.5 15 11 15 C 12 15 13 14 13 12.5 C 13 11 12 10 11 10 Z" fill="currentColor" />
+          <circle cx="8" cy="8" r="1.5" fill="currentColor" />
+          <circle cx="12" cy="7" r="1" fill="currentColor" />
+          <circle cx="15" cy="9" r="1.2" fill="currentColor" />
         </svg>
       );
     case "Performance":
-      // Performance - Speedometer/Gauge icon
+      // Performance - Professional magnifying glass/search icon
       return (
-        <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <circle cx="12" cy="13" r="8" fill="none" stroke="currentColor" strokeWidth="1" />
-          <circle cx="12" cy="13" r="1" fill="currentColor" />
-          <path d="M 12 13 L 14 9" stroke="currentColor" strokeWidth="1.5" fill="none" />
-          <circle cx="12" cy="20" r="0.5" fill="currentColor" />
-          <path d="M 6.5 13 L 8 13 M 18 13 L 16.5 13" stroke="currentColor" strokeWidth="1" />
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+          <circle cx="10" cy="10" r="7" />
+          <path d="M 15 15 L 20 20" />
+          <circle cx="10" cy="10" r="3.5" fill="none" strokeWidth="1.5" />
         </svg>
       );
     default:
