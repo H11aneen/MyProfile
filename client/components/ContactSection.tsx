@@ -1,4 +1,4 @@
-import { Mail, Linkedin } from "lucide-react";
+import { Mail, Linkedin, Github } from "lucide-react";
 
 interface ContactSectionProps {
   language: "ar" | "en";
@@ -13,6 +13,8 @@ const translations = {
     emailAddress: "h1taneen@gmail.com",
     linkedin: "لينكد إن",
     linkedinHandle: "حنين العتيبي",
+    github: "جيت هب",
+    githubHandle: "H11aneen",
     copyright: "© 2026 حنين العتيبي، جميع الحقوق محفوظة",
   },
   en: {
@@ -23,6 +25,8 @@ const translations = {
     emailAddress: "h1taneen@gmail.com",
     linkedin: "LinkedIn",
     linkedinHandle: "Hanin AlOtaibi",
+    github: "GitHub",
+    githubHandle: "H11aneen",
     copyright: "© 2026 Hanin AlOtaibi, All rights reserved.",
   },
 };
@@ -46,9 +50,9 @@ export default function ContactSection({ language }: ContactSectionProps) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto mt-12">
           {/* Email */}
-          <div className="flex flex-col items-center md:items-end text-center md:text-right">
+          <div className="flex flex-col items-center md:items-center text-center">
             <div className="flex items-center justify-center gap-2 mb-3">
               <Mail className="w-5 h-5 text-primary" />
               <span className="text-foreground/70 text-sm">{t.email}</span>
@@ -62,7 +66,7 @@ export default function ContactSection({ language }: ContactSectionProps) {
           </div>
 
           {/* LinkedIn */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-right">
+          <div className="flex flex-col items-center md:items-center text-center">
             <div className="flex items-center justify-center gap-2 mb-3">
               <Linkedin className="w-5 h-5 text-primary" />
               <span className="text-foreground/70 text-sm">{t.linkedin}</span>
@@ -74,6 +78,22 @@ export default function ContactSection({ language }: ContactSectionProps) {
               className="text-foreground hover:text-primary transition-colors"
             >
               {t.linkedinHandle}
+            </a>
+          </div>
+
+          {/* GitHub */}
+          <div className="flex flex-col items-center md:items-center text-center">
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <Github className="w-5 h-5 text-primary" />
+              <span className="text-foreground/70 text-sm">{t.github}</span>
+            </div>
+            <a
+              href="https://github.com/H11aneen"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              {t.githubHandle}
             </a>
           </div>
         </div>
@@ -93,6 +113,14 @@ export default function ContactSection({ language }: ContactSectionProps) {
             className="p-2 hover:bg-secondary/50 rounded-md transition-colors"
           >
             <Linkedin className="w-5 h-5 text-foreground/60 hover:text-primary" />
+          </a>
+          <a
+            href="https://github.com/H11aneen"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 hover:bg-secondary/50 rounded-md transition-colors"
+          >
+            <Github className="w-5 h-5 text-foreground/60 hover:text-primary" />
           </a>
           <div className="flex-1"></div>
           <p className="text-foreground/50 text-xs">{t.copyright}</p>

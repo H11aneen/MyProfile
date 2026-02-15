@@ -51,58 +51,53 @@ const SkillIcon = ({ type }: { type: string }) => {
     case "React":
       // React official logo - electron orbits
       return (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8">
-          <circle cx="12" cy="12" r="3" fill="currentColor" />
-          <ellipse cx="12" cy="12" rx="7" ry="2.5" />
-          <ellipse cx="12" cy="12" rx="7" ry="2.5" transform="rotate(60 12 12)" />
-          <ellipse cx="12" cy="12" rx="7" ry="2.5" transform="rotate(120 12 12)" />
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" className="w-8 h-8">
+          <circle cx="12" cy="12" r="2.5" fill="currentColor" />
+          <ellipse cx="12" cy="12" rx="6.5" ry="2" strokeWidth="1.2" />
+          <ellipse cx="12" cy="12" rx="6.5" ry="2" transform="rotate(60 12 12)" strokeWidth="1.2" />
+          <ellipse cx="12" cy="12" rx="6.5" ry="2" transform="rotate(120 12 12)" strokeWidth="1.2" />
         </svg>
       );
     case "JavaScript":
       // JavaScript official logo - yellow square with JS
       return (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8">
-          <rect x="2" y="2" width="20" height="20" rx="2" fill="#F7DF1E" />
-          <path d="M7 8H9V14H7V8M15 8H17V14H15V8" fill="#000" />
+          <rect x="2" y="2" width="20" height="20" rx="2" fill="#F7DF1E" strokeWidth="0" />
+          <path d="M7 8H9V14H7V8M15 8H17V14H15V8" fill="#000000" strokeWidth="0" />
         </svg>
       );
     case "CSS":
       // CSS official logo - shield
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <path d="M6 3L6.5 19.5L12 21L17.5 19.5L18 3H6Z" fill="currentColor" />
-          <path d="M9 9H15L14.5 13H12L11.5 15H15V17H9L9.5 13H12L12.5 9Z" fill="rgba(0,0,0,0.3)" />
+          <path d="M 6 3 L 7 19 L 12 21 L 17 19 L 18 3 Z" fill="currentColor" />
+          <path d="M 9 8 L 15 8 L 14.5 12 L 12 13 L 9.5 12 Z" fill="rgba(255,255,255,0.2)" />
         </svg>
       );
     case "HTML":
       // HTML official logo - angle brackets
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <path d="M6 3L6.5 19.5L12 21L17.5 19.5L18 3H6Z" fill="currentColor" />
-          <path d="M9 9H15V11H9ZM9 13H15V15H9Z" fill="rgba(0,0,0,0.3)" />
+          <path d="M 6 3 L 7 19 L 12 21 L 17 19 L 18 3 Z" fill="currentColor" />
+          <path d="M 9 8 L 15 8 L 15 10 L 9 10 Z M 9 12 L 15 12 L 15 14 L 9 14 Z" fill="rgba(255,255,255,0.2)" />
         </svg>
       );
     case "Design":
-      // Design/UX icon - circle with grid
+      // Design/UX icon - pen and circle
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <circle cx="12" cy="7" r="2.5" fill="currentColor" />
-          <circle cx="18" cy="14" r="2.5" fill="currentColor" />
-          <circle cx="6" cy="14" r="2.5" fill="currentColor" />
-          <circle cx="12" cy="20" r="2.5" fill="currentColor" />
-          <path d="M12 9.5V18.5" stroke="currentColor" strokeWidth="1" fill="none" />
-          <path d="M8 11L16 17" stroke="currentColor" strokeWidth="1" fill="none" />
-          <path d="M16 11L8 17" stroke="currentColor" strokeWidth="1" fill="none" />
+          <path d="M 14 2 L 20 2 L 20 8 L 14 8 Z M 14 10 L 20 10 L 20 16 L 14 16 Z M 4 10 L 10 10 L 10 16 L 4 16 Z M 4 2 L 10 2 L 10 8 L 4 8 Z" fill="currentColor" opacity="0.6" />
+          <circle cx="7" cy="6" r="1.5" fill="currentColor" />
+          <circle cx="17" cy="6" r="1.5" fill="currentColor" />
+          <circle cx="7" cy="13" r="1.5" fill="currentColor" />
+          <circle cx="17" cy="13" r="1.5" fill="currentColor" />
         </svg>
       );
     case "Performance":
-      // Performance/Speed icon - gauge or speedometer
+      // Performance/Speed icon - lightning bolt
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-          <circle cx="12" cy="14" r="8" fill="none" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M12 14L15 10" stroke="currentColor" strokeWidth="2" />
-          <circle cx="12" cy="14" r="1.5" fill="currentColor" />
-          <path d="M7 14L10 12M17 14L14 12" stroke="currentColor" strokeWidth="1" />
+          <path d="M 13 2 L 3 14 L 9 14 L 7 22 L 17 10 L 11 10 Z" fill="currentColor" />
         </svg>
       );
     default:
