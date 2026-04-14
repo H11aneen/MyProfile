@@ -58,6 +58,16 @@ const projectsData = [
     link: "https://www.behance.net/gallery/231009663/Studip-App",
     tags: ["Education", "Mobile App", "UI Design"],
   },
+  {
+    id: 5,
+    titleAr: "تطبيق سُكنى",
+    titleEn: "Sukna App",
+    descriptionAr: "تطبيق سكنى هو منصة رقمية تهدف إلى تسهيل تجربة البحث عن السكن المناسب بطريقة ذكية وسريعة، حيث يتيح للمستخدمين استعراض الشقق والغرف المتاحة للإيجار مع تفاصيل واضحة مثل الموقع، السعر، الخدمات المتوفرة، والصور.",
+    descriptionEn: "Sukna is a digital platform designed to simplify the housing search experience in a smart and fast way, allowing users to browse available apartments and rooms for rent with clear details such as location, price, available services, and images.",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1f80866bc3374093b088755fa02d2102%2Ffb8ac6b9b40b4aeaa9e8e8c8d8c8b8a8",
+    link: "https://www.behance.net/gallery/246349901/Sukna-UXUUI-Case-study",
+    tags: ["Housing Platform", "UI/UX Design", "Real Estate"],
+  },
 ];
 
 export default function ProjectsSection({
@@ -111,7 +121,7 @@ export default function ProjectsSection({
 
               {/* Project Info */}
               <div>
-                <h3 className={`text-lg font-semibold mb-2 group-hover:text-primary transition-colors ${isArabic ? 'text-right' : 'text-left'}`}>
+                <h3 className={`text-xl md:text-2xl font-bold mb-2 group-hover:text-primary transition-colors text-foreground ${isArabic ? 'text-right' : 'text-left'}`}>
                   {isArabic ? project.titleAr : project.titleEn}
                 </h3>
                 <p className={`text-foreground/70 text-sm mb-3 ${isArabic ? 'text-right' : 'text-left'}`}>
