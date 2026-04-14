@@ -39,7 +39,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto">
           {/* Decorative top accent */}
-          <div className="inline-block mb-8 animate-slide-down">
+          <div className="inline-block mb-8 animate-slide-down" style={{ lineHeight: '3px' }}>
             <div className="w-12 h-1 bg-gradient-to-r from-primary/0 via-primary to-primary/0 rounded-full"></div>
           </div>
 
@@ -51,7 +51,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
           )}
 
           {/* Main Title */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-slide-up bg-gradient-to-r from-foreground via-foreground to-primary bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold mb-6 animate-slide-up bg-gradient-to-r from-foreground via-foreground to-primary bg-clip-text text-transparent mr-auto" style={{ lineHeight: '1.5' }}>
             {t.title}
           </h1>
 
@@ -69,7 +69,8 @@ export default function HeroSection({ language }: HeroSectionProps) {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 animate-slide-up" style={{ animationDelay: '0.3s' }}>
             <a
               href="#contact"
-              className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 hover:scale-105 transition-all duration-300 inline-flex items-center gap-2 shadow-lg shadow-primary/30 hover:shadow-primary/50"
+              className="px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-all duration-300 inline-flex items-center gap-2 shadow-lg hover:shadow-lg"
+              style={{ backgroundColor: 'rgb(212, 175, 55)', color: 'rgb(255, 255, 255)' }}
             >
               {t.contactBtn}
               {isArabic ? (
@@ -80,7 +81,8 @@ export default function HeroSection({ language }: HeroSectionProps) {
             </a>
             <a
               href="#projects"
-              className="px-8 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20"
+              className="px-8 py-3 border-2 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20"
+              style={{ borderColor: 'rgb(247, 196, 43)', color: 'rgb(247, 196, 43)' }}
             >
               {t.projectsBtn}
             </a>
