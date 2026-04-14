@@ -43,7 +43,7 @@ export default function Header({
         <div className="flex items-center justify-between h-16 max-w-7xl mx-auto">
           {/* Logo */}
           <div className="text-2xl font-bold tracking-wider order-3 md:order-1 hover:text-primary transition-colors duration-300 flex" style={{ color: 'rgb(0, 0, 0)' }}>
-            <span className="text-primary" style={{ color: 'rgb(245, 199, 44)', borderColor: 'rgba(255, 255, 255, 1)', borderWidth: '1px' }}>.HANIN</span>
+            <span className="text-primary" style={{ color: 'rgb(212, 175, 55)', borderColor: 'rgba(212, 175, 55, 0.5)', borderWidth: '1px', borderStyle: 'solid', padding: '2px 6px', borderRadius: '4px' }}>.HANIN</span>
           </div>
 
           {/* Navigation Links - Hidden on mobile */}
