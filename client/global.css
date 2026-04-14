@@ -8,86 +8,86 @@
 @layer base {
   /**
    * Tailwind CSS theme for professional portfolio
-   * Dark theme with cyan accents
+   * Light theme with gold accents
   */
   :root {
-    --background: 218 43% 7%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 20%;
 
-    --card: 218 43% 12%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 97%;
+    --card-foreground: 0 0% 15%;
 
-    --popover: 218 43% 7%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
 
-    --primary: 180 100% 50%;
-    --primary-foreground: 218 43% 7%;
+    --primary: 45 93% 57%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 218 43% 15%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 20%;
 
-    --muted: 218 43% 20%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 0 0% 80%;
+    --muted-foreground: 0 0% 50%;
 
-    --accent: 180 100% 50%;
-    --accent-foreground: 218 43% 7%;
+    --accent: 45 93% 57%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 218 43% 15%;
-    --input: 218 43% 15%;
-    --ring: 180 100% 50%;
+    --border: 0 0% 85%;
+    --input: 0 0% 90%;
+    --ring: 45 93% 57%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 218 43% 7%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 180 100% 50%;
-    --sidebar-primary-foreground: 218 43% 7%;
-    --sidebar-accent: 218 43% 15%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 218 43% 15%;
-    --sidebar-ring: 180 100% 50%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 45 93% 57%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 90%;
+    --sidebar-accent-foreground: 0 0% 20%;
+    --sidebar-border: 0 0% 85%;
+    --sidebar-ring: 45 93% 57%;
   }
 
   .dark {
-    --background: 218 43% 7%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 20%;
 
-    --card: 218 43% 12%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 97%;
+    --card-foreground: 0 0% 15%;
 
-    --popover: 218 43% 7%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
 
-    --primary: 180 100% 50%;
-    --primary-foreground: 218 43% 7%;
+    --primary: 45 93% 57%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 218 43% 15%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 20%;
 
-    --muted: 218 43% 20%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 0 0% 80%;
+    --muted-foreground: 0 0% 50%;
 
-    --accent: 180 100% 50%;
-    --accent-foreground: 218 43% 7%;
+    --accent: 45 93% 57%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 218 43% 15%;
-    --input: 218 43% 15%;
-    --ring: 180 100% 50%;
+    --border: 0 0% 85%;
+    --input: 0 0% 90%;
+    --ring: 45 93% 57%;
 
-    --sidebar-background: 218 43% 7%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 180 100% 50%;
-    --sidebar-primary-foreground: 218 43% 7%;
-    --sidebar-accent: 218 43% 15%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 218 43% 15%;
-    --sidebar-ring: 180 100% 50%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 45 93% 57%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 90%;
+    --sidebar-accent-foreground: 0 0% 20%;
+    --sidebar-border: 0 0% 85%;
+    --sidebar-ring: 45 93% 57%;
   }
 }
 
@@ -135,7 +135,7 @@
 
   /* Custom gradient for cards */
   .card-gradient {
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(0, 212, 255, 0) 100%);
+    background: linear-gradient(135deg, rgba(230, 180, 90, 0.15) 0%, rgba(230, 180, 90, 0) 100%);
   }
 }
 
@@ -192,10 +192,10 @@
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    box-shadow: 0 0 5px rgba(230, 180, 90, 0.5);
   }
   50% {
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(230, 180, 90, 0.8);
   }
 }
 
