@@ -124,6 +124,9 @@ export default function ProjectsSection({
                 <h3 className={`text-xl md:text-2xl font-bold mb-2 group-hover:text-primary transition-colors text-foreground ${isArabic ? 'text-right' : 'text-left'}`}>
                   {isArabic ? project.titleAr : project.titleEn}
                 </h3>
+                <p className={`text-foreground/70 text-sm mb-3 ${isArabic ? 'text-right' : 'text-left'}`}>
+                  {isArabic ? project.descriptionAr : project.descriptionEn}
+                </p>
                 <div className={`flex flex-wrap gap-2 ${isArabic ? 'flex-row-reverse justify-end' : ''}`}>
                   {project.tags.map((tag) => (
                     <span
