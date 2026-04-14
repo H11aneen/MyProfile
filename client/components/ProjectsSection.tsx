@@ -111,7 +111,7 @@ export default function ProjectsSection({
                     (e.target as HTMLImageElement).src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 300'%3E%3Crect fill='%23374151' width='500' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='%239ca3af' text-anchor='middle' dy='.3em'%3EProject Image%3C/text%3E%3C/svg%3E";
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4 mx-auto">
+                <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4 mx-auto" style={{ top: '2px' }}>
                   <button className="bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-medium flex items-center gap-2">
                     {t.viewMore}
                     <ArrowUpRight className="w-4 h-4" />
@@ -120,7 +120,7 @@ export default function ProjectsSection({
               </div>
 
               {/* Project Info */}
-              <div>
+              <div style={{ marginTop: '-2px' }}>
                 <h3 className={`text-xl md:text-2xl font-bold mb-2 group-hover:text-primary transition-colors text-foreground ${isArabic ? 'text-right' : 'text-left'}`}>
                   {isArabic ? project.titleAr : project.titleEn}
                 </h3>
