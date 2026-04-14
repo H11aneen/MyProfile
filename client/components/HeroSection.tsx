@@ -30,9 +30,19 @@ export default function HeroSection({ language }: HeroSectionProps) {
   const isArabic = language === "ar";
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 md:px-0 pt-20 pb-20">
+    <section className="min-h-screen flex items-center justify-center px-4 md:px-0 pt-20 pb-20 relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-20 left-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-primary/3 rounded-full blur-3xl -z-10"></div>
+
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto">
+          {/* Decorative top accent */}
+          <div className="inline-block mb-8 animate-slide-down">
+            <div className="w-12 h-1 bg-gradient-to-r from-primary/0 via-primary to-primary/0 rounded-full"></div>
+          </div>
+
           {/* Greeting */}
           {t.greeting && (
             <p className="text-primary text-sm mb-4 animate-slide-down">
@@ -41,8 +51,8 @@ export default function HeroSection({ language }: HeroSectionProps) {
           )}
 
           {/* Main Title */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-slide-up">
-            <span className="text-foreground">{t.title}</span>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-slide-up bg-gradient-to-r from-foreground via-foreground to-primary bg-clip-text text-transparent">
+            {t.title}
           </h1>
 
           {/* Subtitle */}
@@ -59,7 +69,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 animate-slide-up" style={{ animationDelay: '0.3s' }}>
             <a
               href="#contact"
-              className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 hover:scale-105 transition-all duration-300 inline-flex items-center gap-2"
+              className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 hover:scale-105 transition-all duration-300 inline-flex items-center gap-2 shadow-lg shadow-primary/30 hover:shadow-primary/50"
             >
               {t.contactBtn}
               {isArabic ? (
@@ -70,7 +80,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
             </a>
             <a
               href="#projects"
-              className="px-8 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-300"
+              className="px-8 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20"
             >
               {t.projectsBtn}
             </a>
