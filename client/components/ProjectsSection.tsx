@@ -64,7 +64,7 @@ const projectsData = [
     titleEn: "Sukna App",
     descriptionAr: "تطبيق سكنى هو منصة رقمية تهدف إلى تسهيل تجربة البحث عن السكن المناسب بطريقة ذكية وسريعة، حيث يتيح للمستخدمين استعراض الشقق والغرف المتاحة للإيجار مع تفاصيل واضحة مثل الموقع، السعر، الخدمات المتوفرة، والصور.",
     descriptionEn: "Sukna is a digital platform designed to simplify the housing search experience in a smart and fast way, allowing users to browse available apartments and rooms for rent with clear details such as location, price, available services, and images.",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F1f80866bc3374093b088755fa02d2102%2Ffb8ac6b9b40b4aeaa9e8e8c8d8c8b8a8",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1f80866bc3374093b088755fa02d2102%2F5410d6b2980c494e8eee2a10c438f68b?format=webp&width=800&height=1200",
     link: "https://www.behance.net/gallery/246349901/Sukna-UXUUI-Case-study",
     tags: ["Housing Platform", "UI/UX Design", "Real Estate"],
   },
