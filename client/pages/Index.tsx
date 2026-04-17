@@ -10,7 +10,7 @@ export default function Index() {
   const [language, setLanguage] = useState<"ar" | "en">("ar");
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen text-foreground" style={{ background: 'linear-gradient(135deg, rgb(147, 51, 234) 0%, rgb(75, 30, 120) 30%, rgb(20, 20, 40) 70%, rgb(10, 10, 20) 100%)' }}>
       <Header language={language} onLanguageChange={setLanguage} />
       <HeroSection language={language} />
       <AboutSection language={language} />
