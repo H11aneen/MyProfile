@@ -70,7 +70,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
             <a
               href="#contact"
               className="px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-all duration-300 inline-flex items-center gap-2 shadow-lg hover:shadow-lg"
-              style={{ backgroundColor: 'rgb(212, 175, 55)', color: 'rgb(255, 255, 255)', boxShadow: '0 10px 25px rgba(212, 175, 55, 0.3)' }}
+              style={{ backgroundColor: 'rgb(147, 51, 234)', color: 'rgb(255, 255, 255)', boxShadow: '0 10px 25px rgba(147, 51, 234, 0.5)' }}
             >
               {t.contactBtn}
               {isArabic ? (
@@ -82,7 +82,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
             <a
               href="#projects"
               className="px-8 py-3 border-2 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20"
-              style={{ borderColor: 'rgb(212, 175, 55)', color: 'rgb(212, 175, 55)' }}
+              style={{ borderColor: 'rgb(147, 51, 234)', color: 'rgb(147, 51, 234)' }}
             >
               {t.projectsBtn}
             </a>
