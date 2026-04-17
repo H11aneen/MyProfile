@@ -45,9 +45,6 @@ export default function ContactSection({ language }: ContactSectionProps) {
           <h2 className="text-3xl md:text-4xl font-bold mb-6 section-title">
             {t.contact}
           </h2>
-          <p className="text-foreground/70 max-w-2xl text-sm md:text-base">
-            {t.contactDesc}
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto mt-12">
