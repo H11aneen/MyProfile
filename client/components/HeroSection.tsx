@@ -30,7 +30,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
   const isArabic = language === "ar";
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 md:px-0 pt-20 pb-20 relative overflow-hidden" style={{ borderWidth: '1px', borderColor: 'rgba(72, 255, 82, 0.2)', borderTop: '1px solid rgba(147, 51, 234, 0.3)' }}>
+    <section className="min-h-screen flex items-center justify-center px-4 md:px-0 pt-20 pb-20 relative overflow-hidden" style={{ borderTopWidth: '1px', borderTopColor: 'rgba(147, 51, 234, 0.3)' }}>
       {/* Decorative background elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
       <div className="absolute bottom-20 left-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl -z-10"></div>
